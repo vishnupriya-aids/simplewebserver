@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date:
+## Date:04.10.2025
 
 ## AIM:
 To develop a simple webserver to serve html pages and display the Device Specifications of your Laptop.
@@ -36,10 +36,25 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
+```
+from http.server import HTTPServer, BaseHTTPRequestHandler
+content =
+<!DOCTYPE html>
+<html>
+<head>
+<title>My webserver</title>
+</head>
+<body>
+<h1>Saveetha engineering College<h1>
+</body>
+</html>
+
+```
 
 
 ## OUTPUT:
-
+![alt text](<Screenshot 2025-10-04 194908.png>)
+![alt text](<Screenshot 2025-10-04 203336.png>)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
