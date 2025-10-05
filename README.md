@@ -36,7 +36,10 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
-```
+
+from http.server import HTTPServer, BaseHTTPRequestHandler
+
+content = """
 <!DOCTYPE html>
 <html>
 <head>
@@ -79,20 +82,6 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 </body>
 </html>
 
-Python code:
-
-from http.server import HTTPServer, BaseHTTPRequestHandler
-
-content = """
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Webserver</title>
-</head>
-<body>
-    <h1>Welcome!</h1>
-</body>
-</html>
 """
 
 class MyHandler(BaseHTTPRequestHandler):
